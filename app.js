@@ -9,9 +9,11 @@ const app = express();
 
 app.use(bodyParser.urlencoded({extended: false}));
 
-app.use('/admin',adminRoutes);
+//'/admin' and '/shop' is the filter for admin and shop routes respectively 
+app.use('/admin',adminRoutes);  
 app.use('/shop',shopRoutes);
 
+//Page not fount: It should be placed at lowest 
 app.use((req, res, next) => {
     res.status(404).send('<h1>Page not found</h1>')
 });
