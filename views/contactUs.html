@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/shop/">Shop</a></li>
+                <li><a href="/admin/add-product">Admin</a></li>
+                <li><a href="/contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+        <h1 >Book a call</h1>
+    </header>
+
+    <section class="container" >
+
+    <form id="my-form" action="contact-us/success" method="GET" >
+        <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="userName" placeholder="Enter your name" required>
+        </div>
+        <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="userEmailId" placeholder="Enter your email id" required>
+        </div>
+        <div>
+            <label for="phoneno">Phone Number:</label>
+            <input type="number" id="phoneno" name="phoneNumber" placeholder="Enter your phone number" required>
+        </div>
+        <input class="btn" type="submit" value="Submit">
+    </form>
+    </section>
+
+</body>
+
+</html>

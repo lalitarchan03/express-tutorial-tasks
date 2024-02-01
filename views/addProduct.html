@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin- Add Product</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/shop/">Shop</a></li>
+                <li><a href="/admin/add-product">Admin</a></li>
+                <li><a href="/contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!-- <h1 >Book a callS</h1> -->
+    </header>
+
+    <main>
+        <form action="/admin/product" method="POST"> 
+            <input type="text" name="title" placeHolder= "product title"> 
+            <input type="number" name="size" placeHolder= "product size"> 
+            <button type="submit">Add Product</button> </form>
+    </main>
+
+    
+</body>
+</html>
